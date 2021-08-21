@@ -1,6 +1,6 @@
-    ****Rational RBF-PU interpolation with Conditionally Positive Definite Kernels
+    Rational RBF-PU interpolation with Conditionally Positive Definite Kernels
 
-    ****By: Elham Farazandeh and Davoud Mirzaei, University of Isfahan, Iran, November 2020  
+    By: Elham Farazandeh and Davoud Mirzaei, University of Isfahan, Iran, November 2020  
 
 ------------
 
