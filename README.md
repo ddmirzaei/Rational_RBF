@@ -1,6 +1,6 @@
-    *Rational RBF-PU interpolation with polyharmonic splines 
+    **Rational RBF-PU interpolation with polyharmonic splines**
 
-    *By: E. Farazandeh and Davoud Mirzaei, University of Isfahan, Iran, November 2020    
+    **By: Elham Farazandeh and Davoud Mirzaei, University of Isfahan, Iran, November 2020**   
 
 ------------
 
