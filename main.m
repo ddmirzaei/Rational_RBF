@@ -7,7 +7,7 @@ he = 1/190; [xe,ye] = meshgrid(0:he:1,0:he:1);% mesh norm of eval points
 Xe = [xe(:) ye(:)];                           % evaluation points
 f_exact = Fexact(Xe(:,1),Xe(:,2));            % exact solution
 FacBound = 1.5;         % incresing factor for patches near the boundary
-h=0.05; niter = 8;
+h = 0.05; niter = 8;
 for k=1:niter
   hcov = 4*h;                            % spacing between patch centers
   [X,Xcov,PatchNearBound] = ScatPoints2D(0,1,h,hcov,'halton'); 
@@ -27,3 +27,9 @@ xlabel('$\sqrt{N}$','interpreter','latex'); xlim([15 500])
 ylabel('$\|f-\sigma\|_{2,X_e}/\|f\|_{2,X_e}$','interpreter','latex')
 set(gca,'TickLabelInterpreter','latex')
 set(gcf,'Position',[300 300 350 400]); set(gca,'XTick',[20 50 100 200 400])
+figure;
+S = reshape(real(sigma),size(xe));
+mesh(xe,ye,S)
+set(gca,'TickLabelInterpreter','latex')
+set(gcf, 'Position', [300 300 400 650])
+axis([0,1,0,1,-20,20])

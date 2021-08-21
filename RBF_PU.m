@@ -24,7 +24,7 @@ for j = 1:Nc
   if ~isempty(inds)
     Xej = Xej0(inds,:);      % eval points those oj is their closest center
     fXj = fX(IndX{j});       % function values in the j-th patch
-    sigmaj = Ratinal_RBF(Xej,Xj,oj,rho(j),fXj); % local interpolant
+    sigmaj = Rational_RBF(Xej,Xj,oj,rho(j),fXj); % local interpolant
     sigma(indx) = sigmaj;    % putting local values in the global vector
   end
 end
